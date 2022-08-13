@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:background="@color/bg_gray"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:text="名称代码"
+            android:gravity="center"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="置顶"
+            android:gravity="center"
+            android:textColor="@color/text_gray"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center"
+            android:text="拖动"
+            android:textColor="@color/text_gray"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.mobeta.android.dslv.DragSortListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:dslv="http://schemas.android.com/apk/res/com.jdd.android.jdd"
+        android:id="@+id/dslv_self_selections"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@color/gray_horizontal_split"
+        android:dividerHeight="0.1dp"
+        android:scrollbars="none"
+        android:fastScrollEnabled="true"
+        dslv:drag_enabled="true"
+        dslv:collapsed_height="2dp"
+        dslv:drag_scroll_start="0.33"
+        dslv:max_drag_scroll_speed="0.5"
+        dslv:float_alpha="0.6"
+        dslv:slide_shuffle_speed="0.3"
+        dslv:track_drag_sort="false"
+        dslv:use_default_controller="true"
+        dslv:drag_handle_id="@id/ibtn_drag_handle"
+        dslv:float_background_color="@color/menu_text_orange"
+        dslv:sort_enabled="true"
+        dslv:remove_enabled="false"
+        dslv:drag_start_mode="onDown"
+        dslv:remove_mode="flingRemove" />
+
+    <LinearLayout
+        android:id="@+id/ll_delete_stocks"
+        android:padding="5dp"
+        android:background="@color/text_gray"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageButton
+            android:id="@+id/ibtn_delete"
+            android:background="@color/transparent"
+            android:src="@drawable/ibtn_delete_white"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</LinearLayout>

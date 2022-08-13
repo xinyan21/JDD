@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/layout_header"
+            layout="@layout/header_rise_list"/>
+
+    <com.jdd.android.jdd.views.HVListView
+            android:id="@+id/hv_rise_list"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"/>
+</LinearLayout>

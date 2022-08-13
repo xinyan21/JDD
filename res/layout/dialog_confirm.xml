@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/shape_input_rounded_corner"
+    android:layout_width="250dp"
+    android:layout_height="150dp">
+
+    <TextView
+        android:id="@+id/tv_dialog_text"
+        android:text="您的WIFI未连接，确认要打开播放视频吗？"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textColor="@color/text_gray"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape_rounded_solid_gray_stroke_gray"
+            android:textColor="@color/text_gray"
+            android:text="取消"
+            android:layout_width="80dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_btn_rounded_orange"
+            android:textColor="@color/white"
+            android:text="确认"
+            android:layout_width="80dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</LinearLayout>

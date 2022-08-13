@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rg_menu"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RadioButton
+            android:id="@+id/rb_index"
+            android:text="指数"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textSize="18sp"
+            android:textColor="@drawable/selector_price_tab_text_color"
+            android:background="@drawable/selector_price_tab_button_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/title_gray" />
+
+        <RadioButton
+            android:id="@+id/rb_rise_list"
+            android:text="涨幅榜"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textSize="18sp"
+            android:textColor="@drawable/selector_price_tab_text_color"
+            android:background="@drawable/selector_price_tab_button_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/title_gray" />
+
+        <RadioButton
+            android:id="@+id/rb_drop_list"
+            android:text="跌幅榜"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textSize="18sp"
+            android:textColor="@drawable/selector_price_tab_text_color"
+            android:background="@drawable/selector_price_tab_button_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/title_gray" />
+
+        <RadioButton
+            android:id="@+id/rb_user_list"
+            android:text="自选股票池"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textSize="18sp"
+            android:textColor="@drawable/selector_price_tab_text_color"
+            android:background="@drawable/selector_price_tab_button_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

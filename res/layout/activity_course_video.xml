@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <com.jit.video.FullScreenVideoView
+        android:id="@+id/videoview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:background="@color/bg_black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:src="@drawable/btn_back"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_activity_title"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="标题"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:text="摘要"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/ibtn_to_ppt"
+            android:layout_toLeftOf="@id/btn_about"
+            android:src="@drawable/ic_teaching_mode_ppt"
+            android:background="@android:color/transparent"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_video_about"
+        android:layout_below="@id/rl_top_bar"
+        android:background="@color/bg_gray"
+        android:textColor="@color/text_gray"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:minHeight="150dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#50000000" >
+
+        <ImageView
+            android:id="@+id/btn_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/btn_video_off" />
+
+        <TextView
+            android:id="@+id/tv_play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn_play"
+            android:gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seek_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_total_time"
+            android:layout_toRightOf="@+id/tv_play_time"
+            android:max="100"
+            android:maxHeight="10dip"
+            android:minHeight="10dip"
+            android:progress="0"
+            android:thumbOffset="0dp" />
+        <!--  android:progressDrawable="@drawable/seekbar"
+           android:thumb="@drawable/line_point" -->
+    </RelativeLayout>
+
+</RelativeLayout>

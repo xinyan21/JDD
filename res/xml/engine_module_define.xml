@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+~~~~~~~~~~~~~~~模块配置文件~~~~~~~~~~~~~~~
+<module description="模块名称">
+        <id description="模块的唯一标识">index</id>
+        <type description="是否具有界面，1有，0没有">1</type>
+        <category description="模块类型：主界面0，左菜单1，二级界面2">0</category>
+        <class>com.jdd.android.jdd.ui.IndexActivity</class>
+    </module>
+-->
+<engine>
+    <module description="首页模块">
+        <id>index</id>
+        <type>1</type>
+        <category>0</category>
+        <class>com.jdd.android.jdd.ui.NewIndexActivity</class>
+    </module>
+    <module description="行情模块">
+        <id>price</id>
+        <type>1</type>
+        <category>0</category>
+        <class>com.jdd.android.jdd.ui.PriceIndexActivity</class>
+    </module>
+    <module description="情报模块">
+        <id>intelligence</id>
+        <type>1</type>
+        <category>0</category>
+        <class>com.jdd.android.jdd.ui.IntelligenceIndexActivity</class>
+    </module>
+    <module description="智库模块">
+        <id>think_tank</id>
+        <type>1</type>
+        <category>0</category>
+        <class>com.jdd.android.jdd.ui.ThinkTankIndexActivity</class>
+    </module>
+    <module description="我模块">
+        <id>mine</id>
+        <type>1</type>
+        <category>0</category>
+        <class>com.jdd.android.jdd.ui.MineActivity</class>
+    </module>
+</engine>

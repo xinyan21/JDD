@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/iv_course_icon"
+        android:src="@drawable/ic_binding_offer_course"
+        android:layout_centerVertical="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/tv_course_name"
+        android:layout_toRightOf="@id/iv_course_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="课程名称"
+        android:textSize="18sp"
+        android:textColor="@color/title_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_course_tag"
+        android:layout_toRightOf="@id/iv_course_icon"
+        android:layout_below="@id/tv_course_name"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_course_detail_category"
+            android:text="必修课程"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="·总课时"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_total_time"
+            android:text="120"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="小时"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_below="@id/ll_course_tag"
+        android:layout_toRightOf="@id/iv_course_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="课程简介课程简介课程简介课程简介课程简介课程简介课程简介课程简介课程简介课程简介"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+</RelativeLayout>

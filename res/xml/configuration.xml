@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+    <!-- 所有item中的name值必须唯一 -->
+    <system>
+        <item
+            name="ISDEBUG"
+            description="是否为调试模式"
+            value="true" />
+        <item
+            name="CHARSET"
+            description="http请求/响应编码格式"
+            value="utf-8" />
+        <item
+            name="MAIN_SERVER_URL"
+            description="服务器地址"
+            value="http://112.74.87.229/" />
+        <item
+            name="PRICE_SERVER_URL"
+            description="行情服务器地址"
+            value="http://112.74.87.229:8080/JDDBF-Stock" />
+        <item
+            name="VIDEO_SERVER_URL"
+            description="视频服务器地址"
+            value="http://cloud.video.taobao.com/" />
+        <!--<item-->
+        <!--name="BASE_SERVER_URL"-->
+        <!--description="服务器地址"-->
+        <!--value="http://112.74.29.151"/>-->
+        <item
+            name="URL_QUERY_UPDATE"
+            description="查询版本更新"
+            value="http://112.74.87.229:8080/AppNewestVersion.do" />
+        <item
+            name="URL_QUERY_STOCK"
+            description="查询股票信息接口"
+            value="/api/stock/infos" />
+        <item
+            name="URL_QUERY_ASSOCIATED"
+            description="查询相关股票"
+            value="/api/stock/relate" />
+        <item
+            name="URL_QUERY_PLATE"
+            description="查询所属板块"
+            value="/api/stock/plate" />
+        <item
+            name="URL_QUERY_REAL_TIME"
+            description="查询股票实时信息"
+            value="/api/stock/realtime" />
+        <item
+            name="URL_QUERY_4DAY"
+            description="查询4天分时"
+            value="/api/stock/4day" />
+        <item
+            name="URL_QUERY_KLINE"
+            description="查询K线数据"
+            value="/api/stock/line" />
+        <item
+            name="URL_QUERY_RISE"
+            description="涨幅榜"
+            value="/api/stock/limit/up" />
+        <item
+            name="URL_QUERY_DROP"
+            description="跌幅榜"
+            value="/api/stock/limit/down" />
+        <item
+            name="URL_QUERY_RANK"
+            description="涨跌幅榜的新接口"
+            value="/api/stock/rank" />
+        <item
+            name="URL_QUERY_SEARCH"
+            description="搜索"
+            value="/api/stock/search" />
+        <item
+            name="URL_LOGIN"
+            description="登录"
+            value="login.do" />
+        <item
+            name="URL_EDIT_USER_PROFILE"
+            description="修改用户信息"
+            value="saveuinfo.do" />
+        <item
+            name="URL_QUERY_EXPERIENCES"
+            description="查询公开的智文列表"
+            value="querysentimentlist.do" />
+        <item
+            name="URL_QUERY_INTELLIGENCES"
+            description="查询公开的情报列表"
+            value="qintellist.do" />
+        <item
+            name="URL_QUERY_INTELLIGENCE_DETAIL"
+            description="查询公开的情报详情"
+            value="queryinteldetail.do" />
+        <item
+            name="URL_QUERY_EXPERIENCE_DETAIL"
+            description="查询公开的智文详情"
+            value="querysentdetail.do" />
+        <item
+            name="URL_QUERY_FOLLOWS"
+            description="查询关注人列表"
+            value="queryattentionlist.do" />
+        <item
+            name="URL_SEARCH_MY_EXPERIENCES"
+            description="搜索我的智文列表"
+            value="queryselfsentlist.do" />
+        <item
+            name="URL_QUERY_MY_INTELLIGENCES"
+            description="查询我的情报列表"
+            value="qselfintel.do" />
+        <item
+            name="URL_QUERY_MY_EXPERIENCES"
+            description="查询我的智文列表"
+            value="queryselfsentlist.do" />
+        <item
+            name="URL_QUERY_MY_EXPERIENCE_DETAIL"
+            description="查询我的智文详细"
+            value="queryselsentdetail.do" />
+        <item
+            name="URL_QUERY_MY_INTELLIGENCE_DETAIL"
+            description="查询我的情报详情"
+            value="queryselfinteldetail.do" />
+        <item
+            name="URL_COMMENT_INTEL"
+            description="点评情报"
+            value="commonintel.do" />
+        <item
+            name="URL_COMMENT_EXP"
+            description="点评情报"
+            value="commonsent.do" />
+        <item
+            name="URL_COLLECT_INTEL"
+            description="收藏情报"
+            value="collectintel.do" />
+        <item
+            name="URL_BUY_INTEL"
+            description="购买情报"
+            value="payintel.do" />
+        <item
+            name="URL_SPECIFIED_USER_INTELS"
+            description="查询指定用户的情报"
+            value="payintel.do" />
+        <item
+            name="URL_QUERY_FAVORITE_INTELS"
+            description="查询收藏的情报"
+            value="qselfcolintellist.do" />
+        <item
+            name="URL_QUERY_FAVORITE_EXPS"
+            description="查询收藏的智文"
+            value="qselfcolsentlist.do" />
+        <item
+            name="URL_QUERY_FAVORITE_COURSES"
+            description="查询收藏的课程"
+            value="getselfcourselist.do" />
+        <item
+            name="URL_DELETE_FAVORITE_INTELS"
+            description="删除收藏的情报"
+            value="cancelcollectintel.do" />
+        <item
+            name="URL_DELETE_FAVORITE_EXPS"
+            description="删除收藏的智文"
+            value="cancelcollectsent.do" />
+        <item
+            name="URL_DELETE_FAVORITE_COURSES"
+            description="删除收藏的课程"
+            value="cancelcollectcourse.do" />
+        <item
+            name="URL_FOLLOW"
+            description="关注"
+            value="atten.do" />
+        <item
+            name="URL_CANCEL_FOLLOW"
+            description="取消关注"
+            value="cancelatten.do" />
+        <item
+            name="URL_QUERY_LONG_SHORT_COURSES"
+            description="查询多空课程列表"
+            value="getcourse.do" />
+        <item
+            name="URL_QUERY_MY_COURSES"
+            description="查询收藏的多空课程列表"
+            value="getselfcourselist.do" />
+        <item
+            name="URL_QUERY_REGISTER_INFO"
+            description="查询用户注册信息"
+            value="queryrinfo.do" />
+        <item
+            name="URL_QUERY_USER_INFO"
+            description="查询用户信息"
+            value="querycinfo.do" />
+        <item
+            name="URL_REWARD"
+            description="打赏"
+            value="reward.do" />
+        <item
+            name="URL_RESET_TRADE_PWD"
+            description="重置交易密码"
+            value="mdfcw.do" />
+        <item
+            name="URL_VERIFY_EMAIL"
+            description="验证邮箱地址"
+            value="validmail.do" />
+        <item
+            name="URL_EDIT_PROFILE"
+            description="修改用户资料"
+            value="saveuinfo.do" />
+        <item
+            name="URL_TRANSFER_COIN"
+            description="转账"
+            value="carrycash.do" />
+        <item
+            name="URL_CREATE_RECHARGE_ORDER"
+            description="生成充值订单"
+            value="createpay.do" />
+        <item
+            name="URL_QUERY_WX_PAY_INFO"
+            description="查询订单信息"
+            value="WXPayInfo.do" />
+        <item
+            name="URL_QUERY_RECHARGE_RESULT"
+            description="查询充值是否成功"
+            value="querypay.do" />
+        <item
+            name="URL_BUY_VIP"
+            description="充值会员"
+            value="paymemb.do" />
+        <item
+            name="URL_FEEDBACK"
+            description="提交反馈"
+            value="feedback.do" />
+        <!--注册相关接口开始-->
+        <item
+            name="URL_GAIN_SMS_CODE"
+            description="获取短信验证码"
+            value="gainSms.do" />
+        <item
+            name="URL_REGISTER"
+            description="注册"
+            value="registUser.do" />
+        <item
+            name="URL_CHECK_REAL_NAME"
+            description="实名认证"
+            value="authentication.do" />
+        <item
+            name="URL_UPLOAD_FILE"
+            description="上传文件"
+            value="uploadfile.do" />
+        <item
+            name="URL_RESET_PWD"
+            description="重置密码"
+            value="resetUser.do" />
+        <!--注册相关接口结束-->
+    </system>
+
+    <!-- 日志输出 -->
+    <logger>
+        <properties
+            name="LOG_OUTPUT"
+            description="系统日志输出方式[LOG.ALL | LOG.CONSOLE | LOG.FILE | LOG.CLOSE]"
+            value="LOG.CONSOLE" />
+        <properties
+            name="LOG_LEVEL"
+            description="系统日志级别[INFO | DEBUG | WARN | ERROR]"
+            value="DEBUG" />
+    </logger>
+
+    <!-- http配置 -->
+    <http>
+        <parameter
+            name="REQUEST_RETRY_COUNT"
+            description="设置连接重置或超时后的请求自动重试次数,默认为0"
+            value="3" />
+        <parameter
+            name="MAX_CONNECTION"
+            description="最大连接数"
+            value="100" />
+        <parameter
+            name="WAIT_TIMEOUT"
+            description="连接的最大等待时间"
+            value="60000" />
+        <parameter
+            name="CONNECTION_TIMEOUT"
+            description="连接超时"
+            value="30000" />
+        <parameter
+            name="REQUEST_TIMEOUT"
+            description="请求超时"
+            value="30000" />
+        <parameter
+            name="MAX_LINK_ROUTE"
+            description="设置每个路由最大连接数,设置目标机的连接访问的路由连接数,默认是2条"
+            value="100" />
+    </http>
+
+    <!-- 线程池的配置 -->
+    <threadpool>
+        <option
+            name="MODE_TACTICS"
+            description="配置线程池的模式[THREAD_SINGLE | THREAD_MULTI]"
+            value="THREAD_MULTI" />
+        <option
+            name="MAX_POOL_SIZE"
+            description="配置线程池的最大活动数"
+            value="10" />
+    </threadpool>
+</configs>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="800dp"
+              android:layout_height="50dp">
+
+    <TextView
+            android:id="@+id/tv_header_code"
+            android:text="代码"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_header_name"
+                android:text="名称"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:singleLine="true"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:id="@+id/tv_header_change_percent"
+                android:text="涨幅%"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:id="@+id/tv_header_now"
+                android:text="现价"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:id="@+id/tv_header_rise_speed"
+                android:text="涨速"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:id="@+id/tv_header_negotiable_market_capitalization"
+                android:text="流通市值"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:id="@+id/tv_header_quantity_relative"
+                android:text="量比"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:id="@+id/tv_header_handover"
+                android:text="换手"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

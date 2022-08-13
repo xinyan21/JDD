@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                <ListView
+                        android:id="@+id/lv_sell_five_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:background="@android:color/darker_gray"
+                        android:layout_height="0.5dp"/>
+
+                <ListView
+                        android:id="@+id/lv_buy_five_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:background="@android:color/darker_gray"
+                        android:layout_height="0.5dp"/>
+
+                <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TableRow
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            >
+
+                        <TextView
+                                android:text="最新"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:id="@+id/tv_now"
+                                android:text="--"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:text="均价"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:id="@+id/tv_average_price"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+                    </TableRow>
+
+                    <TableRow
+                            android:orientation="horizontal"
+                            >
+
+                        <TextView
+                                android:text="涨跌"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:id="@+id/tv_change_value"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"/>
+
+                        <TextView
+                                android:text="今开"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:id="@+id/tv_open"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                               />
+                    </TableRow>
+
+                    <TableRow
+                            android:orientation="horizontal"
+                            >
+
+                        <TextView
+                                android:text="涨幅"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_change_percent"/>
+
+                        <TextView
+                                android:text="最高"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_high"/>
+                    </TableRow>
+
+                    <TableRow
+                            android:orientation="horizontal"
+                            >
+
+                        <TextView
+                                android:text="换手"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_handover"/>
+
+                        <TextView
+                                android:text="最低"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_low"/>
+                    </TableRow>
+                    <TableRow
+                            android:orientation="horizontal"
+                            >
+
+                        <TextView
+                                android:text="涨停"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_rise_limit"/>
+
+                        <TextView
+                                android:text="跌停"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_drop_limit"/>
+                    </TableRow>
+                </TableLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:background="@android:color/darker_gray"
+                        android:layout_height="0.5dp"/>
+
+                <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TableRow
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            >
+
+                        <TextView
+                                android:text="量比"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_quantity_relative"/>
+
+                        <TextView
+                                android:text="总额"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_volumn"/>
+                    </TableRow>
+
+                    <TableRow
+                            android:orientation="horizontal"
+                            >
+
+                        <TextView
+                                android:text="内盘"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_in"/>
+
+                        <TextView
+                                android:text="外盘"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_out"/>
+                    </TableRow>
+                </TableLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:background="@android:color/darker_gray"
+                        android:layout_height="0.5dp"/>
+
+                <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TableRow
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            >
+
+                        <TextView
+                                android:text="流值"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_negotiable_market_capitalization"/>
+
+                        <TextView
+                                android:text="流通"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_negotiable_market_capitalization_shares"/>
+                    </TableRow>
+
+                    <TableRow
+                            android:orientation="horizontal"
+                            >
+
+                        <TextView
+                                android:text="收益"
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_profit_per_share"/>
+
+                        <TextView
+                                android:text="总股"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                />
+
+                        <TextView
+                                android:paddingLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="--"
+                                android:id="@+id/tv_all_shares"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                <com.jdd.android.jdd.views.StockMinutePriceView
+                        android:id="@+id/smp_minute_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"/>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:text="多空势比图"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"/>
+
+                    <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"/>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp">
+
+                            <TextView
+                                    android:text="方向："
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+
+                            <TextView
+                                    android:text="50↓"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+
+                            <TextView
+                                    android:text="压力："
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+
+                            <TextView
+                                    android:text="60↑"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp">
+
+                            <TextView
+                                    android:text="看多"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+
+                            <TextView
+                                    android:text="星级"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+
+                            <RatingBar
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    style="?android:attr/ratingBarStyleSmall"
+                                    android:id="@+id/rb_rating_bar"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+                android:text="相关股票"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+            <TextView
+                    android:text="名称"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            <TextView
+                    android:text="涨幅%"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            <TextView
+                    android:text="现价"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            <TextView
+                    android:text="量比"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            <TextView
+                    android:text="流通市值"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <ListView
+                android:id="@+id/lv_associated_stocks"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+    </LinearLayout>
+</ScrollView>

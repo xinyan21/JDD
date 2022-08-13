@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_course_logo"
+            android:layout_marginRight="10dp"
+            android:layout_width="100dp"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_course_name"
+                    android:text="- -"
+                    android:textSize="16sp"
+                    android:minLines="2"
+                    android:layout_weight="1"
+                    android:textColor="@color/title_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_free_flag"
+                    android:text="免费"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ef5400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:id="@+id/tv_course_price"
+                    android:text="- -"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ef5400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:id="@+id/tv_course_price_item"
+                    android:text="道德币"
+                    android:textSize="16sp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#ef5400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_teaching_mode"
+                    android:textSize="16sp"
+                    android:text="授课方式："
+                    android:textColor="@color/text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_teaching_mode_pic"
+                    android:src="@drawable/ic_teaching_mode_pic"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_first_plus"
+                    android:text="+"
+                    android:visibility="gone"
+                    android:textSize="20dp"
+                    android:textColor="@color/menu_text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_teaching_mode_ppt"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_teaching_mode_ppt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_second_plus"
+                    android:text="+"
+                    android:textSize="20dp"
+                    android:visibility="gone"
+                    android:textColor="@color/menu_text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_teaching_mode_video"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_teaching_mode_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_course_about"
+                    android:textSize="16sp"
+                    android:text="课程简介："
+                    android:textColor="@color/text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_course_about_value"
+                    android:maxLines="4"
+                    android:textSize="14sp"
+                    android:ellipsize="end"
+                    android:text="- -"
+                    android:textColor="@color/text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_learned_number"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text_red"
+            android:text="- -"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_toRightOf="@id/tv_learned_number"
+            android:textColor="@color/text_gray"
+            android:text="人已学习"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_buy_course"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:text="购买课程"
+            android:focusable="false"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:background="@drawable/shape_btn_rounded_orange"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+    </RelativeLayout>
+</LinearLayout>

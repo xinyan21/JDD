@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/title_gray"
+        android:text="学习了这门课程的人还喜欢"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/lv_recommended_courses"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <Button
+        android:id="@+id/btn_more_courses"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textColor="@color/white"
+        android:background="@color/text_red"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="更多>>"
+        android:layout_width="100dp"
+        android:layout_height="35dp" />
+</LinearLayout>

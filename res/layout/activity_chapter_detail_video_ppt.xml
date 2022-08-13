@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg_user_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include layout="@layout/title_bar"/>
+
+        <TextView
+                android:text="课程章节"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:text="一个价值投资者想要成功，就应该对投资保持一直正确的态度，尤其要对投机呲目欲裂。格雷厄姆坚称投机并不是投资，而且辨清两者之间的区别是至关重要的。"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/title_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:text="视频讲解："
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <VideoView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+        <TextView
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:text="----------------------------------------------------------------"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:text="PPT讲解："
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/text_gray"
+                android:text="查看PPT教程"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="45dp"/>
+
+            <Button
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/text_red"
+                    android:textColor="@color/white"
+                    android:text="下一课 \>"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"/>
+
+            <ImageView
+                    android:src="@drawable/like_related_courses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

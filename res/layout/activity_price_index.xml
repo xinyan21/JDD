@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/bg_black"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <Button
+            android:id="@+id/btn_edit_self_selection"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="编辑"
+            android:layout_width="60dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="沪深"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/ibtn_search"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_self_selection_stocks"
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+            android:text="自选"
+            android:gravity="center"
+            android:textColor="@color/text_red"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_margin="10dp"
+            android:background="@color/gray_vertical_split"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_rose_drop_list"
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+            android:text="涨跌排名"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp">
+
+        <View
+            android:background="@drawable/gradient_gray"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/v_horizontal_bold_line_self_selection"
+            android:layout_weight="1.7"
+            android:background="@color/text_red"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:visibility="gone"
+            android:layout_weight="1.7"
+            android:background="@drawable/gradient_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_weight="1.7"
+            android:background="@drawable/gradient_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_weight="1.5"
+            android:background="@drawable/gradient_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/v_horizontal_bold_line_rose_drop_list"
+            android:visibility="gone"
+            android:layout_weight="1.5"
+            android:background="@color/text_red"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_weight="2"
+            android:background="@drawable/gradient_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/vf_container"
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_self_selection_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/fl_rose_drop_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewFlipper>
+
+</LinearLayout>

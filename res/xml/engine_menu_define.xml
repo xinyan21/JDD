@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+~~~~~~~~~~~~~~~~~~~~~主菜单配置文件~~~~~~~~~~~~~~~
+<button>
+        <position description="按钮位置">1</position>
+        <button-type description="按钮类型">1</button-type>
+        <text description="按钮文字">行情</text>
+        <icon-res-name description="图标selector资源名称">ic_price</icon-res-name>
+        <module description="对应启动的模块">price</module>
+        <visibility description="是否显示按钮：0不显示；1显示">1</visibility>
+    </button>
+module标签里的值为engine_module_define配置的模块Id-->
+<engine>
+    <button>
+        <position>1</position>
+        <button-type>1</button-type>
+        <text>首页</text>
+        <icon-res-name>ic_index</icon-res-name>
+        <module>index</module>
+        <visibility>1</visibility>
+    </button>
+    <button>
+        <position>2</position>
+        <button-type>1</button-type>
+        <text>行情</text>
+        <icon-res-name>ic_price</icon-res-name>
+        <module>price</module>
+        <visibility>1</visibility>
+    </button>
+    <button>
+        <position>3</position>
+        <button-type>1</button-type>
+        <text>情报</text>
+        <icon-res-name>ic_intelligence</icon-res-name>
+        <module>intelligence</module>
+        <visibility>1</visibility>
+    </button>
+    <button>
+        <position>4</position>
+        <button-type>1</button-type>
+        <text>智库</text>
+        <icon-res-name>ic_think_tank</icon-res-name>
+        <module>think_tank</module>
+        <visibility>1</visibility>
+    </button>
+    <button>
+        <position>5</position>
+        <button-type>1</button-type>
+        <text>我</text>
+        <icon-res-name>ic_mine</icon-res-name>
+        <module>mine</module>
+        <visibility>1</visibility>
+    </button>
+</engine>

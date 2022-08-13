@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:background="@color/bg_gray"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="@color/text_gray"
+            android:text="排序："
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="#dad8d9"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+
+        <Button
+            android:id="@+id/btn_sort_by_time"
+            android:background="@color/transparent"
+            android:textColor="@color/menu_text_orange"
+            android:text="时间"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/ic_triangle_down_orange"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_hot"
+            android:background="@color/transparent"
+            android:textColor="@color/text_gray"
+            android:text="最高热度"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_sort_by_price"
+            android:background="@color/transparent"
+            android:textColor="@color/text_gray"
+            android:text="价格"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/ic_triangle_down_gray"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:background="@color/stock_list_divider"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:background="@drawable/shape_btn_rounded_orange"
+            android:textColor="@color/white"
+            android:text="筛选"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="28dp" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray_horizontal_split"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_filter"
+        android:visibility="gone"
+        android:background="@color/bg_gray"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="授课方式："
+            android:paddingLeft="5dp"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_video"
+            android:gravity="center"
+            android:text="视频"
+            android:background="@drawable/shape_rounded_solid_gray_stroke_gray"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btn_picture"
+            android:gravity="center"
+            android:text="图文"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_rounded_solid_gray_stroke_gray"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btn_video_pic"
+            android:gravity="center"
+            android:text="视频+图文"
+            android:background="@drawable/shape_rounded_solid_gray_stroke_gray"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp"
+            android:layout_width="100dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_long_short_course_list"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:divider="@color/stock_list_divider"
+        android:dividerHeight="0.1dp"
+        android:cacheColorHint="#00000000"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

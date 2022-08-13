@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_black"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/ibtn_dialog_close"
+        android:layout_gravity="right"
+        android:src="@drawable/btn_delete"
+        android:background="@color/transparent"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TableLayout
+        android:padding="10dp"
+        android:background="@color/bg_black"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:text="最新"
+                android:textColor="@color/menu_text_gray"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_now"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:text="开盘"
+                android:textColor="@color/menu_text_gray"
+                android:gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_open"
+                android:text="- -"
+                android:textColor="@color/menu_text_gray"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:gravity="center_vertical"
+                android:text="最高"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_high"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:text="最低"
+                android:gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_low"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:gravity="center_vertical"
+                android:text="涨停"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_up_limit"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:text="跌停"
+                android:gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_down_limit"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:gravity="center_vertical"
+                android:text="换手"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_hand_over"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:text="总额"
+                android:gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_total_vol"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:gravity="center_vertical"
+                android:text="内盘"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_in"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:text="外盘"
+                android:gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_out"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:gravity="center_vertical"
+                android:text="流值"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_negotiable_capitalization"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:text="市值"
+                android:gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_market_value"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:gravity="center_vertical"
+                android:text="市净"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_pb"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:text="市盈"
+                android:gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_pe"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+        </TableRow>
+
+        <TableRow android:visibility="gone">
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:gravity="center_vertical"
+                android:text="收益"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_profit"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:textColor="@color/menu_text_gray"
+                android:text="总股"
+                android:gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            />
+
+            <TextView
+                android:id="@+id/tv_dialog_total_shares"
+                android:textColor="@color/menu_text_gray"
+                android:text="- -"
+                android:gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

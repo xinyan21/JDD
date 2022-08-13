@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@drawable/ic_triangle_up_orange"
+        android:layout_gravity="right"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="5dp"
+        android:layout_width="12dp"
+        android:layout_height="12dp" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/shape_rectangle_solid_gray_stroke_dark"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_buy_three_month"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_for_musang"
+            android:text="2880今币3个月"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_buy_six_month"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_for_musang"
+            android:text="5180今币6个月"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_buy_twelve_month"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_for_musang"
+            android:text="9880今币12个月"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_search"
+        android:background="@color/bg_black"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/rci_head_portrait"
+            android:src="@drawable/ic_default_portrait"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_fake_input"
+            android:layout_marginLeft="70dp"
+            android:paddingLeft="35dp"
+            android:hint="搜股票、情报、智文、技能"
+            android:textSize="15sp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/btn_search_price"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:background="@color/bg_gray"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/banner_index_top"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <Button
+                    android:id="@+id/btn_start_morality"
+                    android:background="@color/transparent"
+                    android:text="星球道德"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text_black"
+                    android:drawableTop="@drawable/ic_morality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_experiences_study"
+                    android:background="@color/transparent"
+                    android:text="技能学习"
+                    android:textColor="@color/text_black"
+                    android:drawableTop="@drawable/ic_experieces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_wealthy_tank"
+                    android:background="@color/transparent"
+                    android:text="创富智库"
+                    android:textColor="@color/text_black"
+                    android:drawableTop="@drawable/ic_integrity_finace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_stock_intel"
+                    android:background="@color/transparent"
+                    android:text="股票情报"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/text_black"
+                    android:drawableTop="@drawable/ic_stock_intel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gv_index"
+                android:numColumns="3"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp"
+                android:background="@color/transparent"
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_stock_reports"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingBottom="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_study_report"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:text="名师研报"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="个股分析报告"
+                        android:textColor="@color/text_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_long_short_course_entry"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp">
+
+                        <TextView
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="多空兵法教程"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"
+                            android:text="菠菜3小时"
+                            android:textColor="@color/text_gray"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_long_short_battle_entry"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp">
+
+                        <Button
+                            android:background="@color/transparent"
+                            android:drawableLeft="@drawable/ic_hot_courses"
+                            android:text="多空实战点评"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/btn_more_courses"
+                android:text="查看所有教程"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:src="@drawable/ic_latest_intel"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:text="最新情报"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:background="@color/bg_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+
+                <ListView
+                    android:id="@+id/lv_latest_intels"
+                    android:background="@color/white"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    android:listSelector="@drawable/selector_articles"
+                    android:divider="@color/stock_list_divider"
+                    android:dividerHeight="0.1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:background="@color/bg_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+
+                <Button
+                    android:id="@+id/btn_more_intelligences"
+                    android:text="查看所有情报>"
+                    android:textSize="14sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/menu_text_orange"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:src="@drawable/ic_latest_experiences"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:text="最新智文"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:background="@color/bg_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+
+                <ListView
+                    android:id="@+id/lv_latest_experiences"
+                    android:background="@color/white"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    android:listSelector="@drawable/selector_articles"
+                    android:divider="@color/stock_list_divider"
+                    android:dividerHeight="0.1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:background="@color/bg_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+
+                <Button
+                    android:id="@+id/btn_more_experiences"
+                    android:text="查看所有智文>"
+                    android:textSize="14sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/menu_text_orange"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

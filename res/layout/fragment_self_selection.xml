@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gv_index"
+        android:numColumns="3"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:layout_marginBottom="5dp"
+        android:background="@color/bg_gray"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <ListView
+        android:id="@+id/lv_self_selection_stocks"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:dividerHeight="0.5dp"
+        android:divider="@color/stock_list_divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_no_self_selections"
+        android:textColor="@color/menu_text_orange"
+        android:background="@color/white"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:text="您还未添加自选"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

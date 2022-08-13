@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/bg_black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/iv_logo"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="2dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_search_key"
+                android:background="@drawable/shape_input_rounded_corner"
+                android:hint="搜情报"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/ibtn_search"
+                android:background="@color/transparent"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/btn_search_price"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/bg_gray"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="@color/text_gray"
+            android:text="排序："
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="#dad8d9"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_sort_by_good_comment"
+            android:background="@color/transparent"
+            android:textColor="@color/menu_text_orange"
+            android:text="好评"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/ic_triangle_down_orange"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_sort_by_time"
+            android:background="@color/transparent"
+            android:textColor="@color/text_gray"
+            android:text="时间"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/ic_triangle_down_gray"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_only_charges"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/cb_only_charges"
+                android:button="@null"
+                android:background="@drawable/selector_cb_checked_red"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/tv_only_charges"
+                android:textColor="@color/text_gray"
+                android:text="只看收费"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <View
+            android:background="@color/stock_list_divider"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:background="@drawable/shape_btn_rounded_orange"
+            android:textColor="@color/white"
+            android:text="筛选"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_intelligences"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:divider="@color/stock_list_divider"
+        android:dividerHeight="0.1dp"
+        android:cacheColorHint="#00000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

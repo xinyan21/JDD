@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<engine>
+    <menu-style>
+        <menu-background description="菜单栏背景资源名">menu_bg</menu-background>
+        <button-background description="菜单按钮背景资源名">
+            selector_menu_button_bg_color
+        </button-background>
+        <button-text-color description="按钮文字颜色资源名">selector_menu_text_color</button-text-color>
+    </menu-style>
+    <enable-horizontal-slide-intercept description="启用横向手势拦截，当存在左右菜单时需要用到: true or false">
+        false
+    </enable-horizontal-slide-intercept>
+</engine>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:text="--"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"/>
+
+    <TextView
+            android:id="@+id/tv_change_percent"
+            android:text="--"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"/>
+
+    <TextView
+            android:id="@+id/tv_quantity_relative"
+            android:text="--"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="30dp"/>
+
+    <TextView
+            android:id="@+id/tv_now"
+            android:text="--"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="30dp"/>
+
+    <TextView
+            android:id="@+id/tv_negotiable_market_capitalization"
+            android:text="--"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"/>
+</LinearLayout>

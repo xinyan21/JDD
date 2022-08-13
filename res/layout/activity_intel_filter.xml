@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lv_father_filter_category"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:padding="5dp"
+            android:divider="@color/stock_list_divider"
+            android:dividerHeight="1dp"
+            android:background="@color/bg_gray"
+            android:layout_width="110dp"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/lv_child_filter_category"
+            android:padding="10dp"
+            android:divider="@color/stock_list_divider"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <GridView
+            android:id="@+id/gv_child_filter_category"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:visibility="gone"
+            android:numColumns="2"
+            android:background="@color/bg_gray"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/menu_text_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <LinearLayout
+        android:background="@color/bg_gray"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_marginLeft="10dp"
+            android:text="恢复默认 "
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/shape_rounded_solid_gray_stroke_gray"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="确    定 "
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/shape_btn_rounded_orange"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/bg_black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_marginLeft="32dp"
+            android:text="今德道兵法"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/ibtn_search"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/split"
+            android:layout_toLeftOf="@id/ibtn_search"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@id/split"
+            android:visibility="gone"
+            android:text="登录"
+            android:drawableBottom="@drawable/ic_triangle_down_white"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/bg_gray"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_stock_index_list"
+                android:background="@color/white"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:divider="@color/stock_list_divider"
+                android:dividerHeight="0.1dp"
+                android:layout_width="match_parent"
+                android:layout_height="161dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_long_short_course_entry"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_bg_for_index"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="多空兵法学习 - 做股票从这开始"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:textColor="@color/text_blue"
+                    android:textSize="30sp"
+                    android:text=">"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ViewFlipper
+                    android:id="@+id/vf_ads"
+                    android:autoStart="true"
+                    android:flipInterval="5000"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/iv_ad_one"
+                        android:src="@drawable/market_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_ad_two"
+                        android:src="@drawable/market_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_ad_three"
+                        android:src="@drawable/market_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </ViewFlipper>
+
+                <LinearLayout
+                    android:layout_gravity="bottom|right"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_page_indicator_one"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_rounded_dot_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_page_indicator_two"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_rounded_dot_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_page_indicator_three"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_rounded_dot_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/shape_bg_for_index"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_long_short_art_of_war"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_latest_intel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_toRightOf="@id/iv_long_short_art_of_war"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="最新多空兵法"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:id="@+id/btn_more_long_short_art_of_war"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="更多>"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <View
+                    android:id="@+id/long_short_art_of_war_split"
+                    android:layout_below="@id/iv_long_short_art_of_war"
+                    android:layout_margin="5dp"
+                    android:background="@color/stock_list_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <ListView
+                    android:id="@+id/lv_long_short_art_of_war"
+                    android:layout_below="@id/long_short_art_of_war_split"
+                    android:background="@color/white"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    android:layout_margin="5dp"
+                    android:divider="@color/stock_list_divider"
+                    android:dividerHeight="0.1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="304dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/shape_bg_for_index"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_long_short_battle"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_latest_profession_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_toRightOf="@id/iv_long_short_battle"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="最新多空实战"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:id="@+id/btn_more_long_short_battles"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="更多>"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <View
+                    android:id="@+id/long_short_battle_split"
+                    android:layout_below="@id/iv_long_short_battle"
+                    android:layout_margin="5dp"
+                    android:background="@color/stock_list_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <ListView
+                    android:id="@+id/lv_latest_long_short_battles"
+                    android:layout_below="@id/long_short_battle_split"
+                    android:background="@color/white"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    android:layout_margin="5dp"
+                    android:divider="@color/stock_list_divider"
+                    android:dividerHeight="0.1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="304dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_bg_for_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_talks"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_latest_wealthy_thought"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_toRightOf="@id/iv_talks"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="道德经杂谈"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:id="@+id/btn_more_talks"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="更多>"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <View
+                    android:id="@+id/talks_split"
+                    android:layout_below="@id/iv_talks"
+                    android:layout_margin="5dp"
+                    android:background="@color/stock_list_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <ListView
+                    android:id="@+id/lv_latest_talks"
+                    android:layout_below="@id/talks_split"
+                    android:background="@color/white"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    android:layout_margin="5dp"
+                    android:divider="@color/stock_list_divider"
+                    android:dividerHeight="0.1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="304dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:background="@drawable/shape_bg_for_index"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_latest_intel"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_latest_intel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_toRightOf="@id/iv_latest_intel"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="最新股票情报"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:id="@+id/btn_more_intelligences"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="更多>"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <View
+                    android:id="@+id/intel_split"
+                    android:layout_below="@id/iv_latest_intel"
+                    android:layout_margin="5dp"
+                    android:background="@color/stock_list_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <ListView
+                    android:id="@+id/lv_latest_intels"
+                    android:layout_below="@id/intel_split"
+                    android:background="@color/white"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    android:layout_margin="5dp"
+                    android:divider="@color/stock_list_divider"
+                    android:dividerHeight="0.1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="304dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:background="@drawable/shape_bg_for_index"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_profession_experience"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_latest_profession_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_toRightOf="@id/iv_profession_experience"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="最新职业智库"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:id="@+id/btn_more_profession_experiences"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="更多>"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <View
+                    android:id="@+id/profession_split"
+                    android:layout_below="@id/iv_profession_experience"
+                    android:layout_margin="5dp"
+                    android:background="@color/stock_list_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <ListView
+                    android:id="@+id/lv_latest_profession_experiences"
+                    android:layout_below="@id/profession_split"
+                    android:background="@color/white"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    android:layout_margin="5dp"
+                    android:divider="@color/stock_list_divider"
+                    android:dividerHeight="0.1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="304dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_bg_for_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_wealthy_thought"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_latest_wealthy_thought"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_toRightOf="@id/iv_wealthy_thought"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="最新创富金融"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:id="@+id/btn_more_wealthy_thoughts"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="更多>"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <View
+                    android:id="@+id/wealthy_split"
+                    android:layout_below="@id/iv_wealthy_thought"
+                    android:layout_margin="5dp"
+                    android:background="@color/stock_list_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <ListView
+                    android:id="@+id/lv_latest_wealthy_thoughts"
+                    android:layout_below="@id/wealthy_split"
+                    android:background="@color/white"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    android:layout_margin="5dp"
+                    android:divider="@color/stock_list_divider"
+                    android:dividerHeight="0.1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="304dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

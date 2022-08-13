@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" />
+
+    <TextView
+        android:text="安全邮箱可以用于密码找回等操作"
+        android:textColor="@color/menu_text_orange"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:text="邮箱地址"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_email_addr"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_input_rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:text="交易密码"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_trade_pwd"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_input_rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="30dp"
+        android:text="提  交"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_btn_rounded_orange"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:text="请在72小时内登录邮箱，并点击邮件中的链接完成验证"
+        android:textColor="@color/text_blue"
+        android:textSize="18sp"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="没收到邮件？\n1）请检查邮箱地址是否正确\n2）检查邮件是否在垃圾箱内\n3）重新发送邮件"
+        android:textColor="@color/text_gray"
+        android:textSize="18sp"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

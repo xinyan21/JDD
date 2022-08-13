@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:textColor="@color/text_gray"
+            android:text="名称"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="@color/text_gray"
+            android:text="现价"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_change_percent"
+                android:textColor="@color/text_gray"
+                android:text="涨跌幅"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_triangle_down_orange"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_main"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:divider="@color/stock_list_divider"
+        android:dividerHeight="0.1dp"
+        android:cacheColorHint="#00000000"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" />
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <EditText
+            android:id="@+id/et_search_key"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:hint="搜索我关注的人"
+            android:background="@drawable/shape_search_input_rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/ibtn_search"
+            android:background="@color/transparent"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/btn_search_price"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_my_follows"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:divider="@color/stock_list_divider"
+            android:dividerHeight="0.1dp"
+            android:cacheColorHint="#00000000"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_pop_window_for_selected_character"
+            android:text="X"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_btn_rounded_orange"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <com.jdd.android.jdd.sidebar.SideBar
+            android:id="@+id/sb_name_index"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <TextView
+            android:text="智文类型"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_no_limit"
+                android:text="不限"
+                android:textSize="16sp"
+                android:checked="true"
+                android:button="@drawable/selector_rb_rounded_orange"
+                android:textColor="@color/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rb_profession_experience"
+                android:text="专业技能学习"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:button="@drawable/selector_rb_rounded_orange"
+                android:textColor="@color/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rb_start_up_thought"
+                android:layout_marginLeft="10dp"
+                android:text="创富感悟"
+                android:textSize="16sp"
+                android:button="@drawable/selector_rb_rounded_orange"
+                android:textColor="@color/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_select_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="请选择您感兴趣的行业"
+            android:textSize="20sp"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb_select_all"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tv_select_hint"
+            android:button="@null"
+            android:visibility="gone"
+            android:background="@drawable/selector_cb_checked_blue"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/tv_select_all"
+            android:layout_alignTop="@id/cb_select_all"
+            android:layout_toRightOf="@id/cb_select_all"
+            android:layout_centerHorizontal="true"
+            android:text="全选"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:id="@+id/gv_industries"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:numColumns="3"
+            android:background="@color/bg_gray"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/cb_select_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:text="确定"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_btn_rounded_orange"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

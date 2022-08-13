@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/user_portrait_with_gender_large" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_marginTop="10dp"
+                    android:text="- -"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/text_gray"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp">
+
+                <Button
+                    android:id="@+id/btn_coin_num1"
+                    android:text="8今币"
+                    android:tag="8"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_btn_rounded_orange"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_coin_num2"
+                    android:text="88今币"
+                    android:tag="88"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_gray"
+                    android:background="@drawable/shape_input_rounded_corner"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_coin_num3"
+                    android:text="168今币"
+                    android:tag="168"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_gray"
+                    android:background="@drawable/shape_input_rounded_corner"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_coin_num4"
+                    android:text="388今币"
+                    android:tag="388"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_gray"
+                    android:background="@drawable/shape_input_rounded_corner"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp" />
+
+                <Button
+                    android:id="@+id/btn_coin_num5"
+                    android:text="688今币"
+                    android:textSize="18sp"
+                    android:tag="688"
+                    android:textColor="@color/text_gray"
+                    android:background="@drawable/shape_input_rounded_corner"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp" />
+
+                <Button
+                    android:id="@+id/btn_coin_num6"
+                    android:text="1288今币"
+                    android:tag="1288"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_gray"
+                    android:background="@drawable/shape_input_rounded_corner"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_custom_money"
+                android:background="@android:color/transparent"
+                android:text="其它金额"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/text_blue"
+                android:layout_width="185dp"
+                android:layout_height="45dp" />
+
+            <Button
+                android:id="@+id/btn_reward_ta"
+                android:background="@drawable/shape_btn_rounded_orange"
+                android:text="打赏给TA"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_width="200dp"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

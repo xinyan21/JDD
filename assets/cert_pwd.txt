@@ -1,0 +1,24 @@
+证书密码：
+jdd123
+
+<button>
+        <position>3</position>
+        <button-type>1</button-type>
+        <text>情报</text>
+        <icon-res-name>ic_intelligence</icon-res-name>
+        <module>intelligence</module>
+        <visibility>1</visibility>
+    </button>
+    <button>
+        <position>4</position>
+        <button-type>1</button-type>
+        <text>智库</text>
+        <icon-res-name>ic_think_tank</icon-res-name>
+        <module>think_tank</module>
+        <visibility>1</visibility>
+    </button>
+
+    正式服务器 http://112.74.29.151/
+    测试环境：http://112.74.87.229/
+
+    账号密码：13237135639         125879.

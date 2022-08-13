@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_from_industry"
+            android:text="来自"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/menu_text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_industry_name"
+            android:layout_centerVertical="true"
+            android:text="- -"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_from_industry"
+            android:textColor="@color/menu_text_gray"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_article_type"
+            android:text="(股票情报)"
+            android:layout_toRightOf="@id/tv_industry_name"
+            android:textColor="@color/menu_text_gray"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_author_name"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/menu_text_gray"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/rci_head_portrait"
+            android:scaleType="centerInside"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_default_portrait"
+            android:layout_toLeftOf="@id/tv_author_name"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:textColor="@color/text_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_cmt"
+            android:text="点评："
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/menu_text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_cmt_great_count"
+            android:drawableLeft="@drawable/ic_cmt_great"
+            android:layout_toRightOf="@id/tv_cmt"
+            android:text="- -"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_cmt_good_count"
+            android:drawableLeft="@drawable/ic_cmt_good"
+            android:layout_toRightOf="@id/tv_cmt_great_count"
+            android:text="- -"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_price_value"
+            android:drawableLeft="@drawable/ic_coin"
+            android:layout_alignParentRight="true"
+            android:text="- -"
+            android:layout_gravity="right"
+            android:textColor="@color/text_red"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:drawablePadding="5dp"
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/ibtn_delete"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_delete"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

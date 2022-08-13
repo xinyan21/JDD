@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_stock_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="- -"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/tv_stock_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="000001"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_now"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/stock_red"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:text="- -"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_changeable_value"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@color/white"
+        android:text="- -" />
+</LinearLayout>

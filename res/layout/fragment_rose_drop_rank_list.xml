@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:fadingEdge="none"
+    android:overScrollMode="never"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:background="@color/bg_gray"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text=" 涨幅榜"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_gray"
+                android:drawableLeft="@drawable/ic_triangle_up_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_limit_up_count"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="- -"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_toLeftOf="@id/tv_limit_up_count"
+                android:text=" 涨停数："
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:textColor="@color/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_more_rose"
+                android:background="@color/transparent"
+                android:layout_alignParentRight="true"
+                android:text="更多 >"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                android:layout_width="70dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_rose_list"
+            android:background="@color/white"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:minHeight="100dp"
+            android:divider="@color/stock_list_divider"
+            android:dividerHeight="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="540dp" />
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:background="@color/bg_gray"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text=" 跌幅榜"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_gray"
+                android:drawableLeft="@drawable/ic_triangle_down_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_limit_down_count"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="- -"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_toLeftOf="@id/tv_limit_down_count"
+                android:text=" 跌停数："
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:textColor="@color/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_more_drop"
+                android:background="@color/transparent"
+                android:layout_alignParentRight="true"
+                android:text="更多 >"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                android:layout_width="70dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_drop_list"
+            android:background="@color/white"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:dividerHeight="0.5dp"
+            android:minHeight="100dp"
+            android:divider="@color/stock_list_divider"
+            android:layout_width="match_parent"
+            android:layout_height="540dp" />
+    </LinearLayout>
+</ScrollView>

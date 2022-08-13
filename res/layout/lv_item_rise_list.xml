@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp">
+
+    <TextView
+            android:id="@+id/tv_code"
+            android:gravity="center"
+            android:text="- -"
+            android:layout_width="60dp"
+            android:layout_height="40dp"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+        <TextView
+                android:id="@+id/tv_name"
+                android:gravity="center_vertical"
+                android:layout_width="100dp"
+                android:paddingLeft="10dp"
+                android:text="- -"
+                android:singleLine="true"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_change_percent"
+                android:gravity="center_vertical"
+                android:text="- -"
+                android:layout_width="50dp"
+                android:layout_height="40dp"/>
+
+
+        <TextView
+                android:id="@+id/tv_now"
+                android:gravity="center_vertical"
+                android:text="- -"
+                android:layout_width="60dp"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_rise_speed"
+                android:gravity="center_vertical"
+                android:text="- -"
+                android:layout_width="60dp"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_negotiable_market_capitalization"
+                android:gravity="center_vertical"
+                android:text="- -"
+                android:paddingLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_quantity_relative"
+                android:gravity="center_vertical"
+                android:layout_width="60dp"
+                android:text="- -"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_handover"
+                android:gravity="center_vertical"
+                android:text="- -"
+                android:layout_width="60dp"
+                android:layout_height="40dp"/>
+    </LinearLayout>
+</LinearLayout>
